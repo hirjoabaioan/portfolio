@@ -1,8 +1,8 @@
-<h1 align="center">Production SaaS — Showcase</h1>
+<h1 align="center">Production SaaS & AI Infrastructure — Showcase</h1>
 
 <p align="center">
-  Four commercial SaaS platforms I designed, built, and run (or am launching) in production — end to end, solo.<br>
-  Architecture, backend, frontend, AI, media pipelines, payments and infrastructure.
+  Six platforms I designed, built, and run (or am launching) in production — end to end, solo.<br>
+  Plus the AI agent infrastructure (router, orchestrator, autonomous healer) I use to build and maintain all of them.
 </p>
 
 <p align="center">
@@ -13,18 +13,24 @@
 
 ---
 
-> **About this repository.** These are **closed-source, commercial products**, so this repo is a *showcase* — architecture notes, feature breakdowns and screenshots — not the source code. Each project below has its own page with details and images.
+> **About this repository.** Most of the projects below are **closed-source, commercial products**, so most of this repo is a *showcase* — architecture notes, feature breakdowns and screenshots, not the source code. Two folders are the exception: **[World Pulse](./world-pulse)** links to a fully open-source repo, and **[AI Orchestration](./ai-orchestration)** contains real, running source from my own personal infrastructure.
 
 ## Projects
 
-| Project | What it is | Live | Stack |
+| Project | What it is | Live / Source | Stack |
 |---|---|---|---|
-| **[StoryFuze](./storyfuze)** | Content-creation SaaS — one workspace, three studios: video editing by transcript, AI creatives and multi-channel publishing, with per-channel copy. | [storyfuze.com](https://storyfuze.com) *(launching soon, not yet live)* | PHP 8.2 · Node · fal.ai · ffmpeg · Stripe |
 | **[IFindSpec / Avocatesc](./ifindspec)** | All-in-one practice-management SaaS for independent professionals & businesses (CRM, scheduling, payments, AI, video & social marketing). Dual-branded from one codebase. | [ifindspec.com](https://ifindspec.com) · [avocatescu.ro](https://avocatescu.ro) | PHP 8.2 · MariaDB · Node · AI · nginx |
+| **[StoryFuze](./storyfuze)** | Content-creation SaaS — one workspace, three studios: video editing by transcript, AI creatives and multi-channel publishing, with per-channel copy. | [storyfuze.com](https://storyfuze.com) *(launching soon, not yet live)* | PHP 8.2 · Node · fal.ai · ffmpeg · Stripe |
 | **[Event Creator Hub](./eventcreatorhub)** | Platform for running scored competitions & events — paperless digital judging, real-time scoreboards, allocations, chat & WhatsApp. | [eventcreatorhub.com](https://eventcreatorhub.com) | PHP · MySQL · Bootstrap · Stripe · WhatsApp |
 | **[WeddingPages](./weddingpages)** | Dynamic wedding-site builder (digital invitations, RSVP, guest photo wall, SMS invites) + a partner/venue portal with bulk ordering & Stripe Connect. | [weddingpages.ro](https://weddingpages.ro) | PHP 8.2 · MariaDB · Stripe Connect · Wasabi S3 |
+| **[World Pulse](./world-pulse)** | Real-time global events map — conflicts, news, official announcements, disasters — from free public sources, on a zero-dependency D3 globe. | **Open source**: [github.com/hirjoabaioan/world-pulse](https://github.com/hirjoabaioan/world-pulse) · [live](https://hirjoaba-ioan.ro/projects/world-pulse/) | Node (zero deps) · D3 · GDELT |
+| **[Jobs Finder](./jobs-finder)** | Job search across 7 free, no-API-key sources, with a public tier and an authenticated admin tier. | [live](https://hirjoaba-ioan.ro/projects/jobs-finder/) | Node (zero deps) · scrypt auth |
 
-## Common engineering themes across all four
+## [AI Orchestration →](./ai-orchestration)
+
+The agent infrastructure behind all of the above: a **router** that dispatches tasks to the right **orchestrator** profile (investigate → plan → execute through sub-agents, with gates), and a **healer** — an autonomous agent that watches its own stack for problems and decides, by itself, what's safe to auto-fix (isolated, non-core, high-confidence) versus what has to go to a human review queue. Lease + budget gates make it fail closed, not open. This folder has real, running source — not just a description.
+
+## Common engineering themes across all six
 
 - **Full-stack, solo** — database schema, backend, frontend, integrations, deployment and monitoring, all by one person.
 - **PHP + MariaDB core, surrounded by services** — pragmatic, framework-free PHP with Node microservices (media, PDF, messaging) and Python automation around it.
@@ -34,7 +40,7 @@
 
 ## Role
 
-Founder & sole engineer on all four. I own the product from architecture to the running service.
+Founder & sole engineer on all six, plus the AI orchestration layer. I own the product from architecture to the running service.
 
 ---
 
