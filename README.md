@@ -24,7 +24,7 @@
 | **[Event Creator Hub](./eventcreatorhub)** | Platform for running scored competitions & events — paperless digital judging, real-time scoreboards, allocations, chat & WhatsApp. | [eventcreatorhub.com](https://eventcreatorhub.com) | PHP · MySQL · Bootstrap · Stripe · WhatsApp |
 | **[WeddingPages](./weddingpages)** | Dynamic wedding-site builder (digital invitations, RSVP, guest photo wall, SMS invites) + a partner/venue portal with bulk ordering & Stripe Connect. | [weddingpages.ro](https://weddingpages.ro) | PHP 8.2 · MariaDB · Stripe Connect · Wasabi S3 |
 | **[World Pulse](./world-pulse)** | Real-time global events map — conflicts, news, official announcements, disasters — from free public sources, on a zero-dependency D3 globe. | **Open source**: [github.com/hirjoabaioan/world-pulse](https://github.com/hirjoabaioan/world-pulse) · [live](https://hirjoaba-ioan.ro/projects/world-pulse/) | Node (zero deps) · D3 · GDELT |
-| **[Jobs Finder](./jobs-finder)** | Job search across 7 free, no-API-key sources, with a public tier and an authenticated admin tier. | [live](https://hirjoaba-ioan.ro/projects/jobs-finder/) | Node (zero deps) · scrypt auth |
+| **[Jobs Finder](./jobs-finder)** | Job search across 7 free, no-API-key sources, with agentic AI query generation + fit scoring for admin. | [live](https://hirjoaba-ioan.ro/projects/jobs-finder/) | Node (zero deps) · scrypt auth · claude CLI |
 
 ## [AI Orchestration →](./ai-orchestration)
 
