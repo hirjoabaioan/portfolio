@@ -19,7 +19,7 @@
 
 | Project | What it is | Live / Source | Stack |
 |---|---|---|---|
-| **[IFindSpec / Avocatesc](./ifindspec)** | All-in-one practice-management SaaS for independent professionals & businesses (CRM, scheduling, payments, AI, video & social marketing). Dual-branded from one codebase. | [ifindspec.com](https://ifindspec.com) · [avocatescu.ro](https://avocatescu.ro) | PHP 8.2 · MariaDB · Node · AI · nginx |
+| **[IFindSpec / Avocățescu](./ifindspec)** | All-in-one practice-management SaaS for independent professionals & businesses (CRM, scheduling, payments, AI, video & social marketing). Dual-branded from one codebase. | [ifindspec.com](https://ifindspec.com) · [avocatescu.ro](https://avocatescu.ro) | PHP 8.2 · MariaDB · Node · AI · nginx |
 | **[StoryFuze](./storyfuze)** | Content-creation SaaS — one workspace, three studios: video editing by transcript, AI creatives and multi-channel publishing, with per-channel copy. | [storyfuze.com](https://storyfuze.com) *(launching soon, not yet live)* | PHP 8.2 · Node · fal.ai · ffmpeg · Stripe |
 | **[Event Creator Hub](./eventcreatorhub)** | Platform for running scored competitions & events — paperless digital judging, real-time scoreboards, allocations, chat & WhatsApp. | [eventcreatorhub.com](https://eventcreatorhub.com) | PHP · MySQL · Bootstrap · Stripe · WhatsApp |
 | **[WeddingPages](./weddingpages)** | Dynamic wedding-site builder (digital invitations, RSVP, guest photo wall, SMS invites) + a partner/venue portal with bulk ordering & Stripe Connect. | [weddingpages.ro](https://weddingpages.ro) | PHP 8.2 · MariaDB · Stripe Connect · Wasabi S3 |
