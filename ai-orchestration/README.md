@@ -2,13 +2,13 @@
 
 **My own agent infrastructure**, built for orchestrating and keeping healthy the AI-assisted development workflow I use across all the projects in this portfolio (and some I run for others). Not a demo — this runs daily, on my own machine and a production server, with real budget and safety constraints.
 
-> Personal infrastructure, not a commercial product — this is the real source, lightly genericized (hostnames/paths), not a showcase page.
+> Personal infrastructure, not a commercial product. **This folder contains the healer only** (4 files, real source, translated to English and genericized). The router and orchestrator are described below but their code is not published.
 
 ## Three layers
 
-**Router** — a single entry point that classifies an incoming task (explicit flag, project manifest, or keyword match) and dispatches it to the right orchestrator profile, instead of every task being handled ad hoc.
+**Router** *(not in this folder)* — a single entry point that classifies an incoming task (explicit flag, project manifest, or keyword match) and dispatches it to the right orchestrator profile, instead of every task being handled ad hoc.
 
-**Orchestrator** — turns a task into a plan (investigate → plan → human checkpoint), then executes it phase by phase through sub-agents, with per-phase gates (lint, tests, commit) and escalation back to the planner on repeated gate failure. Tracks state per plan so a run can resume instead of restarting.
+**Orchestrator** *(not in this folder)* — turns a task into a plan (investigate → plan → human checkpoint), then executes it phase by phase through sub-agents, with per-phase gates (lint, tests, commit) and escalation back to the planner on repeated gate failure. Tracks state per plan so a run can resume instead of restarting.
 
 **Healer** (this folder) — an autonomous agent that watches its own infrastructure for problems and fixes the safe ones by itself:
 
@@ -52,7 +52,7 @@ Everything that doesn't clear all three lands in a review queue as a diff, not a
 - **`budget.mjs`** — the fail-closed budget gate.
 - **`postpone.mjs`** — a small manual snooze mechanism (dashboard "postpone" button).
 
-These are genuinely the files from my own `~/.config` — I've generalized a couple of hostnames/paths (e.g. `hetzner-claude` → `prod-host`) but the logic, comments and structure are unedited.
+These are the files from my own setup. Comments and log strings were translated from Romanian, and hostnames and paths were genericized; the logic and structure are unchanged. They depend on my local setup (a usage snapshot, an SSH host, the `claude` CLI), so they are meant to be read, not run as-is.
 
 ## Stack
 

@@ -28,7 +28,7 @@ It covers the whole lifecycle — *get discovered → book → deliver → invoi
 
 **Video Studio** *(media pipeline)*
 - YouTube → vertical 9:16 clips (Submagic-style): speech-to-text, auto-captions, editor
-- Voice dubbing / translation in ~40 languages, ffmpeg rendering on a worker
+- Translation into 39 languages and voice dubbing in ~35 (Google Cloud TTS voices), ffmpeg rendering on a worker
 - AI video generation (fal.ai)
 
 **Creative & social marketing**
@@ -69,7 +69,7 @@ It covers the whole lifecycle — *get discovered → book → deliver → invoi
 
 - **Test ↔ production via MariaDB VIEWs** — the test database mirrors production through auto-refreshed views, giving a zero-risk isolated environment for writes.
 - **Centralized dual-branding** — a single codebase serves two domains/brands through an `.env` switch.
-- **Media pipeline** — VAD-based speech-to-text, WYSIWYG captions, multilingual dubbing, ffmpeg rendering on pm2 workers with queues, dedup and a disk reaper.
+- **Media pipeline** — speech-to-text (Whisper via Groq, chunked on detected silence), WYSIWYG captions, multilingual dubbing, ffmpeg rendering on pm2 workers with queues, dedup and a disk reaper.
 - **AI tool-calling** — the assistant performs real CRUD actions via per-scope key routing.
 - **Autoscaling** — Hetzner instances scale up/down (Python + systemd), with heavy jobs offloaded to a separate box.
 - **Automatic i18n** — a `t()` function with on-demand AI translation cached in the database.

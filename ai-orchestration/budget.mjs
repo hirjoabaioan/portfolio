@@ -24,7 +24,7 @@ const LOCAL_SNAPSHOT_PATH = process.env.HEALER_BUDGET_SNAPSHOT ?? join(STATE_DIR
 
 const IS_SERVER = process.env.HEALER_ROLE === "server"; // laptop = default; server runs with HEALER_ROLE=server
 const REMOTE_HOST = process.env.HEALER_REMOTE_HOST ?? "prod-host";
-const REMOTE_SNAPSHOT_PATH = process.env.HEALER_REMOTE_SNAPSHOT_PATH ?? "/root/orchestrator-mirror/healer/budget-snapshot.json";
+const REMOTE_SNAPSHOT_PATH = process.env.HEALER_REMOTE_SNAPSHOT_PATH ?? "/srv/orchestrator/healer/budget-snapshot.json";
 
 const THRESHOLD_PCT = Number(process.env.HEALER_BUDGET_THRESHOLD_PCT ?? 80);
 const SNAPSHOT_STALE_MS = Number(process.env.HEALER_SNAPSHOT_STALE_MIN ?? 45) * 60_000;

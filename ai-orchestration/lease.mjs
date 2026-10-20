@@ -12,7 +12,7 @@ import os from "node:os";
 
 const IS_SERVER = process.env.HEALER_ROLE === "server";
 const REMOTE_HOST = process.env.HEALER_REMOTE_HOST ?? "prod-host";
-const REMOTE_LEASE_PATH = process.env.HEALER_REMOTE_LEASE_PATH ?? "/root/orchestrator-mirror/healer/lease.json";
+const REMOTE_LEASE_PATH = process.env.HEALER_REMOTE_LEASE_PATH ?? "/srv/orchestrator/healer/lease.json";
 const LEASE_TTL_MS = Number(process.env.HEALER_LEASE_TTL_MIN ?? 30) * 60_000;
 
 function sshExec(cmd) {
