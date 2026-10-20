@@ -31,7 +31,7 @@
 | [tool-calling-agent](https://github.com/hirjoabaioan/tool-calling-agent) | Guarded tool use, proposals, router + breaker, MCP (stdio + HTTP, bearer/audience, RFC 9728 metadata) | TypeScript, Zod, SQLite, MCP SDK | Gemini 2.5 Flash 98% · Claude Haiku 4.5 95% · DeepSeek 93% · GPT-4.1 mini 88% |
 | [autonomy-levels-agent](https://github.com/hirjoabaioan/autonomy-levels-agent) | Messaging agent safety: autonomy levels, customer-confirmed writes, server-side identity, dedup / self-echo / loop breaker / handoff | TypeScript, SQLite | Injection 100% on all 4 models; pipeline guarantees 9/9 |
 | [speech-pipeline-bench](https://github.com/hirjoabaioan/speech-pipeline-bench) | Provider abstraction, async job pipeline, ffmpeg cutting + captions, WER benchmark on FLEURS | TypeScript, ffmpeg | RO WER: Gemini 3.8%, Scribe 4.3%, Groq Whisper 11.3% |
-| [world-pulse](https://github.com/hirjoabaioan/world-pulse) | Real-time global events map from free public sources | Node (zero deps), D3 | 659 RSS feeds + GDELT, USGS, GDACS, EONET |
+| [world-pulse](https://github.com/hirjoabaioan/world-pulse) | Real-time global events map from free public sources | Node (zero deps), D3 | 657 RSS feeds + GDELT, USGS, GDACS, EONET |
 
 All three agent repos have CI (lint, build, tests, offline eval replay) and README sections on design decisions and known limitations.
 
